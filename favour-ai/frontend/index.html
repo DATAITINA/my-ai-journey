@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Favour AI</title>
+    <link rel="stylesheet" href="style.css" />
+    <script defer src="script.js"></script>
+  </head>
+  <body>
+    <main class="page">
+      <section class="chat-card" aria-label="Favour AI chat">
+        <header class="chat-header">
+          <div>
+            <p class="eyebrow">Birthday Bot</p>
+            <h1>Favour AI</h1>
+            <p class="subhead">Friendly, fun, and encouraging.</p>
+          </div>
+        </header>
+
+        <div id="messages" class="chat-messages" role="log" aria-live="polite"></div>
+
+        <div id="loading" class="loading" aria-hidden="true">
+          <span class="dot"></span>
+          <span class="dot"></span>
+          <span class="dot"></span>
+        </div>
+
+        <form id="chat-form" class="chat-input" autocomplete="off">
+          <input
+            id="message-input"
+            type="text"
+            name="message"
+            placeholder="Type something kind..."
+            aria-label="Your message"
+            required
+          />
+          <button type="submit" id="send-btn">Send</button>
+        </form>
+      </section>
+    </main>
+  </body>
+</html>
